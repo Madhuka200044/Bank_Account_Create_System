@@ -1,0 +1,228 @@
+
+#include<iostream>
+using namespace std;
+
+string account_num[]={"4810055992","4962006345","4753008741","3345256348","4954083265"};
+string custemer_name[]={"Tom Lara","Simon David","Ben Stacy","John Mark","Cooper Jake",};
+string NIC_num[]={"965622411V","931122456V","927391333V","961343267V","967591530V",};
+string Account_type[]={"Saving","Current","Fixed","Current","Saving",};
+double Blance[]={153000.00 , 153000.00 , 25000.00 , 85000.00 , 62000.00 , 178000.00};
+
+void display_menu()
+{
+    cout<<"1- Coustomer Details"<<endl;
+    cout<<"2- Search Account Dtails"<<endl;
+    cout<<"3- Deposit"<<endl;
+    cout<<"4- Withdrawal"<<endl;
+    cout<<"5- Interest"<<endl;
+}
+
+void display_acc()
+{
+    cout<<"Account-Number\t"<< "Customer-Name\t"<< "NIC-Number\t"<< "Account-Type\t"<< "Balance\t\n";
+    cout<<account_num[0]<<"\t"<<custemer_name[0]<<"\t"<<NIC_num[0]<<"\t"<<Account_type[0]<<"\t\t"<<Blance[0]<<"\n";
+    cout<<account_num[1]<<"\t"<<custemer_name[1]<<"\t"<<NIC_num[1]<<"\t"<<Account_type[1]<<"\t\t"<<Blance[1]<<"\n";
+    cout<<account_num[2]<<"\t"<<custemer_name[2]<<"\t"<<NIC_num[2]<<"\t"<<Account_type[2]<<"\t\t"<<Blance[2]<<"\n";
+    cout<<account_num[3]<<"\t"<<custemer_name[3]<<"\t"<<NIC_num[3]<<"\t"<<Account_type[3]<<"\t\t"<<Blance[3]<<"\n";
+    cout<<account_num[4]<<"\t"<<custemer_name[4]<<"\t"<<NIC_num[4]<<"\t"<<Account_type[4]<<"\t\t"<<Blance[4]<<"\n";
+}
+
+void search_account()
+{
+    string NIC;
+    cout<<"Enter NIC number :";
+    cin>>NIC;
+
+    if (NIC==NIC_num[0])
+    {
+         cout<<"Account-Number\t"<< "Customer-Name\t"<< "NIC-Number\t"<< "Account-Type\t"<< "Balance\t\n";
+         cout<<account_num[0]<<"\t"<<custemer_name[0]<<"\t"<<NIC_num[0]<<"\t"<<Account_type[0]<<"\t\t"<<Blance[0]<<"\n";
+    }
+    else if (NIC==NIC_num[0])
+    {
+         cout<<"Account-Number\t"<< "Customer-Name\t"<< "NIC-Number\t"<< "Account-Type\t"<< "Balance\t\n";
+        cout<<account_num[1]<<"\t"<<custemer_name[1]<<"\t"<<NIC_num[1]<<"\t"<<Account_type[1]<<"\t\t"<<Blance[1]<<"\n";
+    }
+    else if (NIC==NIC_num[0])
+    {
+         cout<<"Account-Number\t"<< "Customer-Name\t"<< "NIC-Number\t"<< "Account-Type\t"<< "Balance\t\n";
+        cout<<account_num[2]<<"\t"<<custemer_name[2]<<"\t"<<NIC_num[2]<<"\t"<<Account_type[2]<<"\t\t"<<Blance[2]<<"\n";
+    }
+    else if (NIC==NIC_num[0])
+    {
+         cout<<"Account-Number\t"<< "Customer-Name\t"<< "NIC-Number\t"<< "Account-Type\t"<< "Balance\t\n";
+        cout<<account_num[3]<<"\t"<<custemer_name[3]<<"\t"<<NIC_num[3]<<"\t"<<Account_type[3]<<"\t\t"<<Blance[3]<<"\n";
+    }
+    else if (NIC==NIC_num[0])
+    {
+         cout<<"Account-Number\t"<< "Customer-Name\t"<< "NIC-Number\t"<< "Account-Type\t"<< "Balance\t\n";
+        cout<<account_num[4]<<"\t"<<custemer_name[4]<<"\t"<<NIC_num[4]<<"\t"<<Account_type[4]<<"\t\t"<<Blance[4]<<"\n";
+    }
+    else{
+        cout<<"Sorry, we don't have any account for this NIC Number."<<endl;
+    }
+}
+
+void Deposit(){
+    string NIC;
+    float dep;
+    cout<<"To deposit enter the Nic number : ";
+    cin>>NIC;
+
+    if (NIC==NIC_num[0])
+    {
+        cout<<"Account-Number\t"<< "Customer-Name\t"<< "NIC-Number\t"<< "Account-Type\t"<< "Balance\t\n";
+        cout<<account_num[0]<<"\t"<<custemer_name[0]<<"\t"<<NIC_num[0]<<"\t"<<Account_type[0]<<"\t\t"<<Blance[0]<<"\n";
+
+        cout<<"Enter the deposit amount : ";
+        cin>>dep;
+
+        cout<<Blance[0]<<" + "<<dep<<" = "<<Blance[0]+dep<<"/=";
+    }
+    else if (NIC==NIC_num[0])
+    {
+        cout<<"Account-Number\t"<< "Customer-Name\t"<< "NIC-Number\t"<< "Account-Type\t"<< "Balance\t\n";
+        cout<<account_num[1]<<"\t"<<custemer_name[1]<<"\t"<<NIC_num[1]<<"\t"<<Account_type[1]<<"\t\t"<<Blance[1]<<"\n";
+
+        cout<<"Enter the deposit amount : ";
+        cin>>dep;
+
+        cout<<Blance[1]<<" + "<<dep<<" = "<<Blance[1]+dep<<"/=";
+    }
+    else if (NIC==NIC_num[0])
+    {
+        cout<<"Account-Number\t"<< "Customer-Name\t"<< "NIC-Number\t"<< "Account-Type\t"<< "Balance\t\n";
+        cout<<account_num[2]<<"\t"<<custemer_name[2]<<"\t"<<NIC_num[2]<<"\t"<<Account_type[2]<<"\t\t"<<Blance[2]<<"\n";
+
+        cout<<"Enter the deposit amount : ";
+        cin>>dep;
+
+        cout<<Blance[2]<<" + "<<dep<<" = "<<Blance[2]+dep<<"/=";
+    }
+    else if (NIC==NIC_num[0])
+    {
+        cout<<"Account-Number\t"<< "Customer-Name\t"<< "NIC-Number\t"<< "Account-Type\t"<< "Balance\t\n";
+        cout<<account_num[3]<<"\t"<<custemer_name[3]<<"\t"<<NIC_num[3]<<"\t"<<Account_type[3]<<"\t\t"<<Blance[3]<<"\n";
+
+        cout<<"Enter the deposit amount : ";
+        cin>>dep;
+
+        cout<<Blance[3]<<" + "<<dep<<" = "<<Blance[3]+dep<<"/=";
+    }
+    else if (NIC==NIC_num[0])
+    {
+        cout<<"Account-Number\t"<< "Customer-Name\t"<< "NIC-Number\t"<< "Account-Type\t"<< "Balance\t\n";
+        cout<<account_num[4]<<"\t"<<custemer_name[4]<<"\t"<<NIC_num[4]<<"\t"<<Account_type[4]<<"\t\t"<<Blance[4]<<"\n";
+
+        cout<<"Enter the deposit amount : ";
+        cin>>dep;
+
+        cout<<Blance[4]<<" + "<<dep<<" = "<<Blance[4]+dep<<"/=";
+    }
+    else{
+        cout<<"Sorry, we don't have any account for this NIC Number."<<endl;
+    }
+}
+
+void withdraw_amount(){
+    double withdraw;
+    string acc;
+    cout<<"enter your account number :";
+    cin>>acc;
+
+    cout<<"enter you want amount :";
+    cin>>withdraw;
+    
+    if (acc==account_num[0])
+        {
+            if (Blance[0]>1000.00)
+            {
+                cout<<"your new balance is ="<<Blance[0]-withdraw<<endl;
+            }
+            else{
+                cout<<"The balance is not sufficient to withdraw."<<endl;
+                }
+        }
+    else if (acc==account_num[1])
+        {
+            if (Blance[1]>1000.00)
+            {
+                cout<<"your new balance is ="<<Blance[1]-withdraw<<endl;
+            }
+            else{
+                cout<<"The balance is not sufficient to withdraw."<<endl;
+                }
+        }
+    else if (acc==account_num[2])
+        {
+            if (Blance[2]>1000.00)
+            {
+                cout<<"your new balance is ="<<Blance[2]-withdraw<<endl;
+            }
+            else{
+                cout<<"The balance is not sufficient to withdraw."<<endl;
+                }
+        }
+    else if (acc==account_num[3])
+        {
+            if (Blance[3]>1000.00)
+            {
+                cout<<"your new balance is ="<<Blance[3]-withdraw<<endl;
+            }
+            else{
+                cout<<"The balance is not sufficient to withdraw."<<endl;
+                }
+        }
+    else if(acc==account_num[4])
+        {
+            if (Blance[4]>1000.00)
+            {
+                cout<<"your new balance is ="<<Blance[4]-withdraw<<endl;
+            }
+            else{
+                cout<<"The balance is not sufficient to withdraw."<<endl;
+                }
+        }
+    else{
+            cout<<"Sorry, we don't have any account for this NIC Number.";
+        }
+        
+    }
+    
+    
+
+
+
+int main() 
+{
+    int choise;
+    char n;
+    do
+    {
+        display_menu();
+        cout<<"Enter the number you want service : ";
+        cin>>choise;
+        switch (choise)
+        {
+        case 1:
+            display_acc();
+            break;
+        
+        case 2:
+            search_account();
+        case 3:
+            Deposit();
+        case 4:
+            withdraw_amount();
+            break;
+        default:
+            cout<<"error ! your choise are wrong.";
+            break;
+        }
+        cout<< "if you need the continue the program (Y,y):";
+        cin>>n;
+        
+        
+    } while (n == 'y' || n == 'Y');
+    
+}
